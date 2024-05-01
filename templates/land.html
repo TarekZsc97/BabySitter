@@ -1,0 +1,82 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Babysitter on road</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/land.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/normalize.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/all.min.css')}}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://www.fontspace.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!--start first page-->
+    <div class="fp">
+        <div class="container">
+            <!--start heading-->
+            <div class="header">
+                <div class="logo">
+                    <img src="{{url_for('static', filename='images/logo.png' )}}" alt="">
+                    <p>Baby sitter on road</p>
+                </div>
+                <div class="greet">
+                    <p>welcome</p>
+                </div>
+                <div class="right-side">
+                    <div class="navbar">
+                        <ul>
+                            <li>
+                                <a href="/" id="home">Home</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="CONTACT US">Contact Us</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--end heading-->
+        <!--start landing-->
+        <div class="land box-style" id="land">
+            <div class="container">
+                <div class="box">
+                    <div class="animation">
+                        <img src="{{url_for('static', filename='images/baby-animation.gif')}}" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="content1">
+                            <a href="#"><i class="far fa-star"></i></a>
+                            <p>Help the mothers to find trustworthy Babysitters in the area at any time with best prices
+                            </p>
+                        </div>
+                        <div class="content2">
+                            <a href="#"><i class="far fa-star"></i></a>
+                            <p>Great opportunities for babysitters, whose are looking for a job according to their
+                                schedule</p>
+                        </div>
+                        <div class="content3">
+                            <a href="#"><i class="far fa-star"></i></a>
+                            <p>Transparent profiles, helpful tools, and our reliable support team help remove childcare
+                                related stress and give
+                                you peace of mind!</p>
+                        </div>
+                    </div>
+                    <a href="/choose">Continue</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end landing-->
+    <!--end fp-->
+    <script src="./js/babysitter.js"></script>
+</body>

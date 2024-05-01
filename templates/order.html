@@ -1,0 +1,86 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Babysitter on road</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/order.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/normalize.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/all.min.css')}}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://www.fontspace.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!--start first page-->
+    <div class="fp">
+        <div class="container">
+            <!--start heading-->
+            <div class="header">
+                <div class="logo">
+                    <img src=" {{url_for('static', filename='images/logo.png' )}} " alt="">
+                    <p>Baby sitter on road</p>
+                </div>
+                <div class="greet">
+                    <p>Order Details</p>
+                </div>
+                <div class="right-side">
+                    <div class="navbar">
+                        <ul>
+                            <li>
+                                <a href="/" id="home">Home</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="CONTACT US">Contact Us</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="sign out">Sign out</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--end heading-->
+        <!--start order-->
+        <div class="order-details" id="order">
+            <div class="page3 box-style">
+                <div class="container">
+                    <div class="box box-alt">
+                        <div class="animation">
+                            <img src="{{url_for('static', filename='images/baby-animation.gif' )}}" alt="">
+                        </div>
+                        <div class="info">
+                            <form action="/ordernow">
+                                <div class="map">
+                                    <input type="text" name="city" id="" placeholder="Add Your Address">
+                                    <!-- <img src="images/map.png" alt=""> -->
+                                </div>
+                                <input type="date" name="date" id="" placeholder="Choose Date">
+                                <input type="time" name="timing" id="" placeholder="Choose Time">
+                                <div class="money">
+                                    <input type="number" name="price" id="" placeholder="Select The Price /H">
+                                    <img src= "{{url_for('static', filename='images/money.png' )}}" alt="">
+                                </div>
+                                 <div class="search">
+                                           <input type="submit" value="Search">
+                                 </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end order-->
+    <script src="./js/babysitter.js"></script>
+</body>

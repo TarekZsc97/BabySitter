@@ -1,0 +1,380 @@
+/*start variable*/
+:root {
+    --background-image :linear-gradient(to top, #B4E2FC , #F9E3F0 );
+    --main-color :#A1CEF8;
+    --secondery-color :#ffffff ;
+    --main-padding: 100px;
+    --button-color:#7baec9;
+}
+/*end variable*/
+/*start global rules*/
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+.body {
+overflow: hidden;
+}
+
+a, ul li {
+    text-decoration: none;
+    cursor: pointer;
+    list-style: none;
+}
+.container {
+    margin-right:auto ;
+    margin-left: auto;    
+    width: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.box-style  {
+    background-image: var(--background-image);
+}
+.box {
+    background-color: A1CEF8;
+    border-radius: 20px;
+    width: 70%;
+    height: 89%;
+    position: relative;
+    left: 170px;
+    margin-top: 15px;
+}
+.animation img {
+        width: 50%;
+    float: right;
+    position: relative;
+    left: 170px;
+}
+
+/*end global rules*/
+/*start fp*/
+.fp {
+    background-color: A1CEF8;
+    overflow: hidden;
+}
+.fp .container .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    height: 75px;
+}
+.fp .container .header .logo p {
+    color: white;
+    font-style: italic;
+    font-weight: bold;
+}
+.fp .container .header .greet p {
+    color: white;
+    font-weight: bold;
+    font-size: x-large;
+    font-family: sans-serif;
+    position: relative;
+    left: 50px;
+}
+.fp .container .header::after {
+    content: " ";
+    background-color: black;
+    position: absolute;
+    width: 150%;
+    bottom: 0;
+    height: 2px;
+    right: -30px;
+}
+.fp .container .header .right-side .navbar  {
+    display: flex;
+    position: relative;
+}
+.fp .container .header .right-side .navbar ul li a {
+    color: black;
+    align-items: center;
+    overflow: hidden;
+    font-family: sans-serif;
+    font-size: 20;
+    padding: 0 10px;
+    font-weight: 600;
+    position: relative;
+    top: 6px;
+}
+#home:active {
+    color: #7baec9;
+}
+.fp .container .header .right-side .navbar .login {
+    color: white;
+    position: relative;
+    left: 20px;
+    border: 1px solid;
+    border-color: black;
+    border-radius: 20px;
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color: var(--main-color);
+}
+.fp .land  {
+        position: relative;
+    height: 87.5%;
+    overflow: hidden;
+
+}
+.fp .land .container .box .content {
+    position: relative;
+    color: white;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    text-align: left;
+    font-weight: bold;
+}
+.fp .land .container .box .content .content1,.content2,.content3{
+display: flex;
+padding: 20px;
+}
+.fp .land .container .box .content a i {
+    padding-right: 10px;
+    color: lightcyan;
+}
+
+.land .box #button {
+position: relative;
+    bottom: -30px;
+    background-color: #7baec9;
+    color: white;
+    text-transform: capitalize;
+    border-color: transparent;
+    width: 45%;
+    height: 70px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    left: 150px;
+}
+.land .box #button:hover{
+    background: #33333356;
+}
+/*end fp*/
+/* start page 2*/
+.page2 {
+    overflow: hidden;
+    display: none;
+}
+.page2 .container .choosing {
+    position: relative;
+    bottom: 430px;
+    right: 200px;
+}
+.page2 .container .choosing button {
+    background-color: #7baec9;
+    color: white;
+    text-transform: capitalize;
+    border-color: transparent;
+    width: 45%;
+    height: 50px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 25px;
+}
+.page2 .container .box-alt {
+    height: 90%;
+}
+.page2 .container .choosing {
+    
+}
+/*end page 2*/
+/*start mommy register*/
+.box-alt3{
+    height:140% ;
+
+}
+.mommy-register {
+position: relative;
+display: none;
+}
+.mommy-register .container .register1 {
+    position: relative;
+    bottom: 450px;
+    left: 60px;
+}
+.mommy-register .container .register1 input {
+    display: block;
+    background-color: #dbe9f7;
+    width: 55%;
+    height: 54px;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    border-color: transparent;
+    padding-left: 25px;
+    font-size: 23px;
+    text-transform: capitalize;
+}
+.mommy-register .container .sign {
+    position: relative;
+    bottom: 400px;
+    color: #403b3b;
+}
+.mommy-register .container .sign hr {
+    width: 50%;
+    position: relative;
+    left: 220px;
+    margin-bottom: 10px;
+} 
+.mommy-register .container .sign button:first-of-type{
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+    border-radius: 12px;
+    border-color: transparent;
+    cursor: pointer;
+}
+.mommy-register .container .sign button:last-of-type {
+    display: block;
+    position: relative;
+    left: 41%;
+    margin-top: 10px;
+    color: white;
+    background-color: #7baec9;
+    width: 18%;
+    height: 40px;
+    border-color: transparent;
+    border-radius: 13px;
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+/*end mommy register*/
+/*start nanny register*/
+.box-alt2{
+    height: 240%;
+    display: none;
+}
+.nanny-register {
+    position: relative;
+    display: none;
+}
+.nanny-register .container .photo {
+    position: relative;
+    bottom: 480px;
+    right: 200px;
+}
+.nanny-register .container .photo i {
+    background-color: white;
+    font-size: xxx-large;
+    color: gray;
+    width: 100px;
+    height: 90px;
+    padding: 15px;
+    border-radius: 20px;
+}
+.nanny-register .container .photo button {
+    background-color: #7baec9;
+    color: white;
+    text-transform: capitalize;
+    border-color: transparent;
+    width: 35%;
+    height: 35px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.nanny-register .container .register2 {
+    position: relative;
+    bottom: 400px;
+    left: 40px;
+}
+.nanny-register .container .register2 input {
+    display: block;
+    background-color: #dbe9f7;
+    width: 55%;
+    height: 54px;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    border-color: transparent;
+    padding-left: 25px;
+    font-size: 23px;
+    text-transform: capitalize;
+}
+
+.special {
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    right: 200px;
+}
+.nanny-register .container .register2 .special input {
+    width: 17%;
+    margin-right: 15px;
+}
+.nanny-register .container .register2 .id {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.nanny-register .container .register2 .id  i {
+    font-size: xxx-large;
+    background-color: #dbe9f7;
+    width: 130px;
+    height: 90px;
+    padding: 15px;
+    border-radius: 20px;
+} 
+
+.nanny-register .container .register2 .id p {
+    font-family: sans-serif;
+    padding-left: 10px;
+    color: grey;
+}
+.container .sign  p {
+
+}
+.container  .sign p span { 
+
+}
+.nanny-register .container .register2 hr {
+    width: 70%;
+    position: relative;
+    left: 60px;
+    margin-bottom: 10px;
+    top: 80;
+}
+.nanny-register .container .sign {
+    position: relative;
+    bottom: 280px;
+    color: #403b3b;
+}
+.nanny-register .container .sign button:first-of-type{
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+    border-radius: 12px;
+    border-color: transparent;
+    cursor: pointer;
+}
+.nanny-register .container .sign button:last-of-type {
+    display: block;
+    position: relative;
+    left: 41%;
+    margin-top: 10px;
+    color: white;
+    background-color: #7baec9;
+    width: 18%;
+    height: 40px;
+    border-color: transparent;
+    border-radius: 13px;
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+/*end nanny register*/

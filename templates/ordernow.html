@@ -1,0 +1,115 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Babysitter on road</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/ordernow.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/normalize.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/all.min.css')}}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://www.fontspace.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!--start first page-->
+    <div class="fp">
+        <div class="container">
+            <!--start heading-->
+            <div class="header">
+                <div class="logo">
+                    <img src=" {{url_for('static', filename='images/logo.png' )}} " alt="">
+                    <p>Baby sitter on road</p>
+                </div>
+                <div class="greet">
+                    <p>Accept Orders</p>
+                </div>
+                <div class="right-side">
+                    <div class="navbar">
+                        <ul>
+                            <li>
+                                <a href="/" id="home">Home</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="CONTACT US">Contact Us</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="sign out">Sign out</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--end heading-->
+        <!--start order-now-->
+        <div class="orders box-style">
+            <div class="box box-alt">
+<!--                <div class="order-one order ">-->
+<!--                    <img src=" {{url_for('static', filename='images/dada.png' )}} " alt="">-->
+<!--                    <div class="ps">-->
+<!--                        <h1>Dada Dodii</h1>-->
+<!--                        <p>6 october 6th street</p>-->
+<!--                        <p>sunday from 7AM to 2PM</p>-->
+<!--                        <p>100 EGP/H</p>-->
+<!--                    </div>-->
+<!--                    <div class="i">-->
+<!--                        <a class="a" href="/accept"><i class="fas fa-check-circle"></i></a>-->
+<!--                        <a href="/accept"><i class="far fa-times-circle"></i></a>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="order-two order ">-->
+<!--                    <img src=" {{url_for('static', filename='images/nanny.jpg' )}} " alt="">-->
+<!--                    <div class="ps">-->
+<!--                        <h1>Donia Gamila</h1>-->
+<!--                        <p>6 october 12th street</p>-->
+<!--                        <p>sunday from 7AM to 2PM</p>-->
+<!--                        <p>130 EGP/H</p>-->
+<!--                    </div>-->
+<!--                    <div class="i">-->
+<!--                        <a class="a" href="/accept"><i class="fas fa-check-circle"></i></a>-->
+<!--                        <a href="/accept"><i class="far fa-times-circle"></i></a>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="order-three order">-->
+<!--                    <img src=" {{url_for('static', filename='images/nanny3.jpg' )}} " alt="">-->
+<!--                    <div class="ps">-->
+<!--                        <h1>Laila Ahmed</h1>-->
+<!--                        <p>El haram 2th street</p>-->
+<!--                        <p>sunday from 7AM to 2PM</p>-->
+<!--                        <p>150 EGP/H</p>-->
+<!--                    </div>-->
+<!--                    <div class="i">-->
+<!--                        <a class="a" href="/accept"><i class="fas fa-check-circle"></i></a>-->
+<!--                        <a href="/accept"><i class="far fa-times-circle"></i></a>-->
+<!--                    </div>-->
+<!--                </div>-->
+                {% for item in data %}
+                <div class="order-four order">
+                    <img style="border-radius: 15px;padding: 1%; width: 20%" src=" {{url_for('static', filename='images/')}}{{item[4]}} " alt="">
+                    <div class="ps">
+                        <h1>{{item[1]}}</h1>
+                        <p>{{item[2]}}</p>
+                        <p>{{item[3]}} EGP/H</p>
+                    </div>
+                    <div class="i">
+                        <a class="a" href="/accept/{{item[0]}}"><i class="fas fa-check-circle"></i></a>
+                        <a href="/accept"><i class="far fa-times-circle"></i></a>
+                    </div>
+                </div>
+                {% endfor %}
+                                </div>
+
+        </div>
+    </div>
+    <!--end order-now-->
+
+</body>

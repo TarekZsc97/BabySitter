@@ -1,0 +1,83 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Babysitter on road</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/accept.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/normalize.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/all.min.css')}}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://www.fontspace.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!--start first page-->
+    <div class="fp">
+        <div class="container">
+            <!--start heading-->
+            <div class="header">
+                <div class="logo">
+                    <img src=" {{url_for('static', filename='images/logo.png' )}} " alt="">
+                    <p>Baby sitter on road</p>
+                </div>
+                <div class="greet">
+                    <p>Order Now</p>
+                </div>
+                <div class="right-side">
+                    <div class="navbar">
+                        <ul>
+                            <li>
+                                <a href="/" id="home">Home</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="CONTACT US">Contact Us</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="sign out">Sign out</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--end heading-->
+        <!--start accept-->
+        <div class="accept box-style">
+            <div class="box box-alt">
+<!--                <h1>{{data[1]}}</h1>-->
+                <div class="content">
+
+
+                    <img style="border-radius: 15px" src=" {{url_for('static', filename='images/')}}{{data[5]}} " alt="">
+
+                    <div class="information">
+                        <h3>26 Years</h3>
+                        <h3>Available On: Sunday</h3>
+                        <h3>Available From: 8AM To 2PM</h3>
+                        <h3>About:</h3>
+                        <p>{{data[4]}}</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-comment-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                <a  href="">Accept</a>
+            </div>
+        </div>
+    </div>
+    <!--end accept-->
+</body>
